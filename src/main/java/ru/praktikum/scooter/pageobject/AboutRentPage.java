@@ -13,7 +13,6 @@ public class AboutRentPage {
     public AboutRentPage(WebDriver webDriver) {
         this.webDriver = webDriver;
     }
-
     //инпут для даты
     private By dateInput = By.xpath(".//input[@placeholder='* Когда привезти самокат']");
     //дропдаун срока аренды
@@ -73,6 +72,4 @@ public class AboutRentPage {
         clickOnOrderButton();
 
     }
-
-
 }

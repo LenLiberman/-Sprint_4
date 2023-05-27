@@ -31,7 +31,6 @@ public class OrderTest {
     public void checkOrderOfScooter1() {
         mainPage = new MainPage(webDriver);
 
-
         webDriver.get(APP_URL);
         mainPage.hideCookieWindow();
         mainPage.clickOnOrderButton();
@@ -50,7 +49,6 @@ public class OrderTest {
     public void checkOrderOfScooter() {
         mainPage = new MainPage(webDriver);
 
-
         webDriver.get(APP_URL);
         mainPage.hideCookieWindow();
         mainPage.clickOnOrderButton();
@@ -65,10 +63,8 @@ public class OrderTest {
         aboutRentPage.checkOrderIsConfirm();
     }
 
-
     @After
     public void closeBrowser() {
         webDriver.quit();
     }
-
 }

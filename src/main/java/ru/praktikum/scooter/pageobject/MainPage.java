@@ -75,10 +75,5 @@ public class MainPage {
         WebElement orderButtonMiddle = wait.until(ExpectedConditions.visibilityOfElementLocated(orderButtonMiddleLocator));
         ((JavascriptExecutor) webDriver).executeScript("arguments[0].scrollIntoView(true);", orderButtonMiddle);
         orderButtonMiddle.click();
-
     }
-
-
-
-
 }

@@ -22,8 +22,6 @@ public class ForWhomPage {
     //инпут для кнопки Далее
     private By continueButton = By.xpath(".//div[@class='Order_NextButton__1_rCA']/button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
 
-
-
     public void writeName(String name) {
         webDriver.findElement(nameInput).sendKeys(name);
     }
@@ -47,9 +45,7 @@ public class ForWhomPage {
 
     public void clickOnContinueButton() {
         webDriver.findElement(continueButton).click();
-
     }
-
     //Шаг: заполнение первой страницы авторизации
     public void fillFirstOrderPage(String name, String surname, String adress, String metro, String telephone) {
         writeName(name);
@@ -59,6 +55,4 @@ public class ForWhomPage {
         writeTelephone(telephone);
         clickOnContinueButton();
     }
-
-
 }
